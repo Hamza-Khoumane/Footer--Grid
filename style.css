@@ -1,0 +1,98 @@
+main {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
+.footer {
+  grid-row: 2/-1;
+
+  background-color: #006e7f;
+  color: white;
+  padding: 3rem 6rem;
+
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 3rem;
+}
+
+.footer__content {
+  grid-row: 1 / span 1;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 3rem;
+}
+
+.footer__content--links,
+.footer__content--info__shop,
+.footer__content--info__account,
+.footer__content--info__company {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+}
+
+.footer__content--info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__content--contact {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  justify-items: center;
+  gap: 1rem;
+}
+
+.footer__content--contact__title {
+  grid-row: 1 / span 1;
+}
+
+.footer__content--contact__phone {
+  grid-row: 2 / span 1;
+}
+
+.footer__content--contact__date {
+  grid-row: 3 / span 1;
+}
+
+.footer__content--contact__icons {
+  grid-row: 4 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.footer__content--contact__icons i {
+  background-color: white;
+  color: #006e7f;
+
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer__copyrights {
+  grid-row: 2 / -1;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 3rem;
+}
+
+.footer__copyrights--right {
+  grid-column: 1 / span 1;
+}
+
+.footer__copyrights--icons {
+  grid-column: 2 / -1;
+  justify-self: end;
+}
+
+.footer__copyrights--icons i {
+  font-size: 3rem;
+  padding: 0.2rem 0.6rem;
+}
